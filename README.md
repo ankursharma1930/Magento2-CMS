@@ -25,7 +25,7 @@ Import CMS Blocks and Pages
 ## Configuration
 
 ## Specifications
-
+ - Support 2.2.x 2.3.x 2.4.x
  - Controller
 	- adminhtml > import/index/index
 ![Magento-Import-CMS](https://user-images.githubusercontent.com/16528097/122640558-d1db5080-d11d-11eb-8147-fee6de6b7b7d.png)
