@@ -63,15 +63,18 @@ class Save extends \Magento\Backend\App\Action
 
         try {
             
-            $file = $_FILES['import_file'];
-
-            if($data['import_type'] == 1){
-                $this->getBlock($file);    
-            }elseif($data['import_type'] == 2){
-                $this->getPage($file);
+            if(@$_FILES['import_file']) {
+                $file = $_FILES['import_file'];
+                if ($data['import_type'] == 1) {
+                    $this->getBlock($file);
+                } elseif ($data['import_type'] == 2) {
+                    $this->getPage($file);
+                } else {
+                    $this->messageManager->addError(__("Please Select Import Type"));
+                    $this->_redirect('*/*/');
+                }
             }else{
-                $this->messageManager->addError(__("Please Select Import Type"));
-                $this->_redirect('*/*/');    
+                $this->messageManager->addError(__("Please Upload CSV file"));
             }
             
             $this->_redirect('*/*/');
