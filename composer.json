@@ -1,16 +1,24 @@
+
 {
     "name": "amage/module-cms",
-    "description": "Import CMS Blocks and Pages",
+    "description": "Impost Export CMS Block and Pages",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "~7.3.0||~7.4.0"
+    },
     "type": "magento2-module",
-    "license": "GPL-3.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
     "authors": [
         {
             "name": "Ankur Sharma",
             "email": "ankur.ank1230@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {},
     "autoload": {
         "files": [
             "registration.php"
