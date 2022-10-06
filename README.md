@@ -1,6 +1,8 @@
 
 # Module Amage Cms
 
+[![installs on Packagist](https://img.shields.io/packagist/dt/amage/module-cms)](https://packagist.org/packages/amage/module-cms)
+
     ``amage/module-cms``
 
  - [Main Functionalities](#markdown-header-main-functionalities)
